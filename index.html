@@ -18,8 +18,8 @@
 <meta property="og:url" content="https://cagoooo.github.io/school-web-migration-playbook/">
 <meta property="og:title" content="校網遷移與 AA 無障礙實作操作台">
 <meta property="og:description" content="給各校資訊組長使用的 12 步驟校網遷移與 AA 無障礙實作指南。可依各校網址、平台與審查狀態套用，不含任何單一學校的個案資料。">
-<meta property="og:image" content="https://cagoooo.github.io/school-web-migration-playbook/og-preview.png?v=2026.08.15-2">
-<meta property="og:image:secure_url" content="https://cagoooo.github.io/school-web-migration-playbook/og-preview.png?v=2026.08.15-2">
+<meta property="og:image" content="https://cagoooo.github.io/school-web-migration-playbook/og-preview.png?v=2026.08.27-2">
+<meta property="og:image:secure_url" content="https://cagoooo.github.io/school-web-migration-playbook/og-preview.png?v=2026.08.27-2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/png">
@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="校網遷移與 AA 無障礙實作操作台">
 <meta name="twitter:description" content="給各校資訊組長使用的 12 步驟校網遷移與 AA 無障礙實作指南。可依各校網址、平台與審查狀態套用，不含任何單一學校的個案資料。">
-<meta name="twitter:image" content="https://cagoooo.github.io/school-web-migration-playbook/og-preview.png?v=2026.08.15-2">
+<meta name="twitter:image" content="https://cagoooo.github.io/school-web-migration-playbook/og-preview.png?v=2026.08.27-2">
 
 <style>
 :root {
@@ -578,15 +578,18 @@ footer a { color:var(--accent); font-weight:700; }
 <p class="note">💡 審核結果以平台通知為準；若退回或限期改善，依通知期限修正並回覆。流程說明請見數發部官方申請頁。</p>
 </section></div><h2 class="phase" style="--c:#4c1d95"><span class="pn">送審後</span><span class="cnt">1 個步驟</span></h2><div class="grid"><section class="card searchable" id="after" style="--sc:#522da9">
 <h3><label class="chk"><input type="checkbox" data-id="after"> <span class="num">1</span> <span class="t">取得標章後：依校務需求逐步擴充</span></label></h3>
-<p class="why">先完成核心內容與審查，再逐步加入相簿、公開資訊、外部連結與自製小站；每次新增仍要維持無障礙規範。</p>
+<p class="why">官方通知「符合」後，先完成標章揭示與公開驗證；再逐步加入相簿、公開資訊、外部連結與自製小站。每次新增仍要維持無障礙規範。</p>
 <ol class='steps'>
-<li>🥇 掛標章：依平台後台的無障礙標章區塊說明，填入官方核發資料</li>
+<li>🥇 <b>先分清兩種官方頁面：</b>「標章專屬頁（Detail）」供網站頁尾的標章連結使用；「檢測紀錄（DetectLog）」留作校內查核、修正與日後比對證據，不必另外掛在公開頁尾</li>
+<li>🪪 <b>依官方核發通知掛標章：</b>下載官方 AA 圖示、放到你校可控的網站位置，再以標章連到你校的專屬標章頁。圖片尺寸必須維持 <b>88 × 31</b>，不可放大、拉伸或加字</li>
+<li>⌨️ <b>公開驗證：</b>回到正式網址確認圖片能顯示、連結可開啟、替代文字能說明「通過AA無障礙網頁檢測」，並以鍵盤 Tab 確認可聚焦及可操作</li>
+<li>ℹ️ <b>不要誤判：</b>主管機關或共構平台的「申請統計」出現 AA，代表登錄狀態已更新；它通常不會自動把標章放進你校網站頁尾，仍須自行依核發通知揭示</li>
 <li>📷 相簿：依你校實際相簿逐一檢查分享連結、標題與替代文字</li>
 <li>📊 會計室公開資訊：依規範與校務需求決定年度範圍，優先處理文字可選取的檔案</li>
 <li>🔗 外部連結：逐條確認目的地、名稱、另開視窗提示與失效狀況</li>
 <li>🛠️ 自製小站：先決定保留、搬遷或下線，再建立可維護的網址與責任人</li>
 </ol>
-<p class="note">💡 認證有效期 3 年，期間會不定期抽查，所以之後新增內容仍要維持同樣的撰寫紀律。</p>
+<p class="note">💡 通過不代表永遠不用檢查。保留核發通知、Detail 與 DetectLog 連結、修正紀錄及後續 FreeGo 報告；新增內容後持續做軟體與人工檢視。標章有效期間及抽查規則以官方最新通知為準。</p>
 </section></div>
 
 <div class="tool" style="--sc:#7a5cd0">
@@ -719,7 +722,7 @@ calc();
 <script>
 (function () {
   if (!('serviceWorker' in navigator)) return;
-  var APP_VERSION = '2026.08.15-2';
+  var APP_VERSION = '2026.08.27-2';
   var SW_REG = null, UPDATING = false;
 
   function applyUpdate() {
