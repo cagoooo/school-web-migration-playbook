@@ -59,3 +59,18 @@
 ---
 
 這是一份跨校示範教材，不是任何單一學校的官方網站或審查結果。
+
+<!-- akai-edu-tools:backlink -->
+
+---
+
+## 🔗 阿凱老師教育工具集
+
+這個專案是[阿凱老師教育工具集](https://cagoooo.github.io/Akai/)的 **#123 校網無障礙 AA 遷移操作平台**，由桃園市龍潭區石門國民小學阿凱老師開發。
+
+- 工具介紹頁：[https://cagoooo.github.io/Akai/tool/123/](https://cagoooo.github.io/Akai/tool/123/)
+- 線上使用：[https://cagoooo.github.io/school-web-migration-playbook/](https://cagoooo.github.io/school-web-migration-playbook/)
+- 教學情境文章：[https://cagoooo.github.io/Akai/blog/web-migration-123-accessibility-aa-console/](https://cagoooo.github.io/Akai/blog/web-migration-123-accessibility-aa-console/)
+- 全部工具（上百個教育工具與原始碼）：[https://cagoooo.github.io/Akai/](https://cagoooo.github.io/Akai/)
+
+想改造成自己的版本？到上面的教學情境文章，按左下角「複製 AI 開發提示詞」，貼給 ChatGPT、Claude、Gemini 等 AI 助手，就能參考這份原始碼開始規劃。
