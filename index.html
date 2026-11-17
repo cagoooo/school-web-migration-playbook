@@ -18,8 +18,8 @@
 <meta property="og:url" content="https://cagoooo.github.io/school-web-migration-playbook/">
 <meta property="og:title" content="校網遷移與 AA 無障礙實作操作台">
 <meta property="og:description" content="給各校資訊組長使用的 12 步驟校網遷移與 AA 無障礙實作指南。可依各校網址、平台與審查狀態套用，不含任何單一學校的個案資料。">
-<meta property="og:image" content="https://cagoooo.github.io/school-web-migration-playbook/og-preview.png?v=2026.08.27-2">
-<meta property="og:image:secure_url" content="https://cagoooo.github.io/school-web-migration-playbook/og-preview.png?v=2026.08.27-2">
+<meta property="og:image" content="https://cagoooo.github.io/school-web-migration-playbook/og-preview.png?v=2026.11.17-1">
+<meta property="og:image:secure_url" content="https://cagoooo.github.io/school-web-migration-playbook/og-preview.png?v=2026.11.17-1">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/png">
@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="校網遷移與 AA 無障礙實作操作台">
 <meta name="twitter:description" content="給各校資訊組長使用的 12 步驟校網遷移與 AA 無障礙實作指南。可依各校網址、平台與審查狀態套用，不含任何單一學校的個案資料。">
-<meta name="twitter:image" content="https://cagoooo.github.io/school-web-migration-playbook/og-preview.png?v=2026.08.27-2">
+<meta name="twitter:image" content="https://cagoooo.github.io/school-web-migration-playbook/og-preview.png?v=2026.11.17-1">
 
 <style>
 :root {
@@ -225,6 +225,16 @@ ul.files li { padding:.45rem .7rem; margin:.3rem 0; border-radius:.45rem;
 footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--line);
   color:var(--muted); font-size:.88rem; text-align:center; }
 footer a { color:var(--accent); font-weight:700; }
+/* 作者署名列（2026-11-17） */
+footer .site-credit { display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
+  gap:.35rem .7rem; margin:1rem 0 0; padding-top:.9rem; border-top:1px dashed var(--line);
+  color:var(--fg); font-size:.95rem; }
+.site-credit__heart { display:inline-block; margin:0 .1rem; filter:saturate(1.1); }
+footer .site-credit__author { text-decoration:none; border-bottom:1px dotted currentColor;
+  padding:.3rem 0 1px; }
+footer .site-credit__author:hover, footer .site-credit__author:focus-visible { border-bottom-style:solid; }
+footer .version-tag { padding:.1rem .65rem; border:1px solid var(--line); border-radius:99px;
+  background:var(--card); color:var(--muted); font-size:.82rem; font-variant-numeric:tabular-nums; }
 /* 完成的卡片：淡出但仍看得清楚，序號換成打勾
    （狀態不只靠顏色傳達——這站本身在講無障礙，要以身作則） */
 .done { opacity:.62; }
@@ -260,6 +270,9 @@ footer a { color:var(--accent); font-weight:700; }
   .toolrow { flex-direction:column; align-items:stretch; gap:.75rem; }
   .tool label { justify-content:space-between; }
   #sw-update-bar { left:12px; right:12px; transform:none; max-width:none; }
+  footer .site-credit { flex-direction:column; gap:.3rem; }
+  .footer-school { display:block; }
+  .footer-dot { display:none; }
 }
 
 /* 很窄的手機（iPhone SE 等） */
@@ -287,7 +300,7 @@ footer a { color:var(--accent); font-weight:700; }
 }
 
 @media print {
-  .btn, #sw-update-bar { display:none; }
+  .btn, #sw-update-bar, footer .site-credit { display:none; }
   .card { break-inside:avoid; border-color:#999; }
 }
 </style>
@@ -604,6 +617,7 @@ footer a { color:var(--accent); font-weight:700; }
 
 <footer>
   校網遷移與 AA 無障礙公開操作台 · 可套用到你的學校<br>本公開版已去識別化；請使用你校自己的網址、內容與校內安全資料。
+  <p class="site-credit"><span class="credit-line">Made with <span class="site-credit__heart" aria-label="愛心">❤️</span> by <a href="https://cagoooo.github.io/Akai/" target="_blank" rel="noopener noreferrer" title="阿凱老師教育科技創新專區" class="site-credit__author">阿凱老師</a><span class="footer-school"><span class="footer-dot" aria-hidden="true">・</span>桃園市龍潭區石門國民小學</span></span><span class="version-tag">v2026.11.17-1</span></p>
 </footer>
 </div>
 
@@ -722,7 +736,7 @@ calc();
 <script>
 (function () {
   if (!('serviceWorker' in navigator)) return;
-  var APP_VERSION = '2026.08.27-2';
+  var APP_VERSION = '2026.11.17-1';
   var SW_REG = null, UPDATING = false;
 
   function applyUpdate() {

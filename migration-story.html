@@ -54,8 +54,12 @@ th { color:#fff; background:var(--teal); } tr:nth-child(even) td { background:#f
 .split h3 { margin-top:0; }
 .footer { padding:1.5rem .5rem 2rem; color:var(--muted); text-align:center; font-size:.92rem; }
 .footer a { margin:0 .3rem; }
+.footer .site-credit { margin:.6rem 0 0; color:var(--ink); }
+.footer .site-credit__author { margin:0; color:var(--teal); font-weight:700; text-decoration:none; border-bottom:1px dotted currentColor; }
+.footer .site-credit__author:hover, .footer .site-credit__author:focus-visible { border-bottom-style:solid; }
+@media (max-width: 600px) { .footer-school { display:block; } .footer-dot { display:none; } }
 @media (max-width:620px) { body { font-size:1rem; } .wrap { padding:.6rem; } .hero { border-radius:1rem; } th,td { padding:.55rem; } }
-@media print { body { background:#fff; } .hero,.chapter,.endnote { box-shadow:none; } .toc { display:none; } a { color:inherit; } }
+@media print { body { background:#fff; } .hero,.chapter,.endnote { box-shadow:none; } .toc { display:none; } a { color:inherit; } .footer .site-credit { display:none; } }
 </style>
 </head>
 <body>
@@ -292,6 +296,7 @@ th { color:#fff; background:var(--teal); } tr:nth-child(even) td { background:#f
 
   <footer class="footer">
     跨校校網遷移與 AA 無障礙實作示範教材｜去識別化公開紀錄
+    <p class="site-credit">Made with <span class="site-credit__heart" aria-label="愛心">❤️</span> by <a href="https://cagoooo.github.io/Akai/" target="_blank" rel="noopener noreferrer" title="阿凱老師教育科技創新專區" class="site-credit__author">阿凱老師</a><span class="footer-school"><span class="footer-dot" aria-hidden="true">・</span>桃園市龍潭區石門國民小學</span></p>
   </footer>
 </div>
 </body>
